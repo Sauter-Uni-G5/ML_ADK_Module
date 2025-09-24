@@ -6,7 +6,7 @@ import warnings
 
 if __name__ == "__main__":
     warnings.filterwarnings("ignore")
-    df = pd.read_csv("C:/Users/luis2/OneDrive/Documentos/ML_ADK_Module/dados/resultado_unificado_normalized_clean.csv", sep=";") 
+    df = pd.read_csv("dados_normalizados.csv", sep=";") 
     X_train, y_train, X_test, y_test = gold_transformer(df)
 
     print("Treinando modelos...")
